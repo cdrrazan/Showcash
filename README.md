@@ -22,7 +22,9 @@
 ## Preview
 
 <div align="center">
-<img src="assets/preview-hero.png" alt="Editorial hero with studio statement and author details" width="90%">
+<img src="assets/preview-hero.png" alt="Editorial hero in dark mode with studio statement and author details" width="90%">
+<br><br>
+<img src="assets/preview-light.png" alt="The same hero in light mode — warm paper with dark brass accent" width="90%">
 <br><br>
 <img src="assets/preview-grid.png" alt="Hairline product grid with numbered entries and status markers" width="90%">
 </div>
@@ -56,8 +58,11 @@ python3 -m http.server   # …or serve it → http://localhost:8000
 
 ## Design notes
 
-- **Editorial, not flashy** — near-black canvas, hairline Swiss grid, serif
-  display type, a single brass accent
+- **Editorial, not flashy** — hairline Swiss grid, Fraunces display serif,
+  Google Sans body text, a single brass accent
+- **Dark & light** — follows the system preference, with a manual toggle
+  persisted in `localStorage`; near-black canvas in the dark, warm paper
+  in the light
 - **Data-driven** — products live in one JS array; the grid renders from it
 - **Quiet motion** — staggered scroll reveals via `IntersectionObserver`,
   understated hover states, full `prefers-reduced-motion` support
