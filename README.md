@@ -33,19 +33,21 @@
 
 ## The catalogue
 
-| № | Product | What it is | Stack | Status |
-|---|---|---|---|---|
-| 01 | **[Trackaru](https://trackaru.com)** | Subscription tracking — never miss a payment | Rails | Live |
-| 02 | **Trovaru** | Domain & SSL operations for agencies | Rails | In development |
-| 03 | **Linkaru** | URL shortening, analytics & QR codes | TypeScript | In development |
-| 04 | **Linkart** | Link-in-bio pages, unlimited & instant | Rails | In development |
-| 05 | **Signaru** | Browser-trusted TLS certs via Let's Encrypt | Rails · ACME | In development |
-| 06 | **Keeparu** | Private writing vault, public by choice | Rails | In development |
-| 07 | **[Kamandar](https://kamandar.byaru.com)** | Personal GitHub command center | Ruby stdlib | Live |
-| 08 | **[Denizens](https://devis.im)** | Free `name.devis.im` subdomains & aliases | Ruby · TS · Actions | Live |
-| 09 | **Pasten** | Unannounced — in the workshop | — | Coming soon |
-| 10 | **[Roost](https://roost.pages.dev)** | Local apps → live HTTPS on your own domain | Go · Docker · Caddy | Live |
-| 11 | **[Boardly](https://boardly-gh.pages.dev)** | GitHub Projects boards on autopilot | TS · Actions | Live |
+| № | Product | Category | What it is | Stack | Status |
+|---|---|---|---|---|---|
+| 01 | **[Trackaru](https://trackaru.com)** | SaaS | Subscription tracking — never miss a payment | Rails | Live |
+| 02 | **Trovaru** | SaaS | Domain & SSL operations for agencies | Rails | In development |
+| 03 | **Linkaru** | Link Tools | URL shortening, analytics & QR codes | TypeScript | In development |
+| 04 | **Linkart** | Link Tools | Link-in-bio pages, unlimited & instant | Rails | In development |
+| 05 | **Signaru** | Dev Tools | Browser-trusted TLS certs via Let's Encrypt | Rails · ACME | In development |
+| 06 | **Keeparu** | Writing | Private writing vault, public by choice | Rails | In development |
+| 07 | **[Kamandar](https://kamandar.byaru.com)** | Dev Tools | Personal GitHub command center | Ruby stdlib | Live |
+| 08 | **[Denizens](https://devis.im)** | Dev Tools | Free `name.devis.im` subdomains & aliases | Ruby · TS · Actions | Live |
+| 09 | **Pasten** | Unannounced | In the workshop | — | Coming soon |
+| 10 | **[Roost](https://roost.pages.dev)** | Dev Tools | Local apps → live HTTPS on your own domain | Go · Docker · Caddy | Live |
+| 11 | **[Boardly](https://boardly-gh.pages.dev)** | Dev Tools | GitHub Projects boards on autopilot | TS · Actions | Live |
+
+The catalogue is filterable by category on the page itself.
 
 ## Running locally
 

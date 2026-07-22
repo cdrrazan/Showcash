@@ -20,9 +20,12 @@ CLAUDE.md     This file
 ## Architecture of index.html
 
 - **Product data** lives in the `products` array inside the `<script>` tag.
-  Each entry has: `name`, `tagline`, `desc`, `url`, `github`, `stack` (array),
-  `status` (`live` | `dev` | `soon`), `gradient` (two hex colors for the
-  fallback cover), `image` (og-image URL or `null`), and `socials`.
+  Each entry has: `name`, `cat` (category shown on the card and used by the
+  filter bar), `tagline`, `desc`, `url`, `github`, `stack` (array), and
+  `status` (`live` | `dev` | `soon`).
+- The filter bar is generated from the distinct `cat` values; the colophon
+  cell stays visible in every filter and spans the remainder of the last
+  grid row (`sizeColophon()`).
 - Cards are rendered into `#grid` by mapping over `products` — to add or edit
   a product, change the data array, not the markup.
 - Cover images fall back to a gradient + monogram via an inline `onerror`
