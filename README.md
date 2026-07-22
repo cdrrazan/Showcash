@@ -1,74 +1,72 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Showcash — products built by Rajan Bhattarai" width="100%">
+<img src="assets/banner.svg" alt="Showcash — the product catalogue of Rajan Bhattarai" width="100%">
+
+<br><br>
+
+[![Website](https://img.shields.io/badge/Website-cdrrazan.com-0b0b0c?style=flat-square&labelColor=1e1e20&color=c8a978)](https://cdrrazan.com)
+[![GitHub](https://img.shields.io/badge/GitHub-cdrrazan-0b0b0c?style=flat-square&labelColor=1e1e20&color=c8a978)](https://github.com/cdrrazan)
+[![X](https://img.shields.io/badge/X-@cdrrazan-0b0b0c?style=flat-square&labelColor=1e1e20&color=c8a978)](https://x.com/cdrrazan)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-cdrrazan-0b0b0c?style=flat-square&labelColor=1e1e20&color=c8a978)](https://www.linkedin.com/in/cdrrazan)
+[![Writing](https://img.shields.io/badge/Writing-dev.to-0b0b0c?style=flat-square&labelColor=1e1e20&color=c8a978)](https://dev.to/cdrrazan)
 
 <br>
 
-[![Website](https://img.shields.io/badge/Website-cdrrazan.com-7c6cff?style=for-the-badge&logo=googlechrome&logoColor=white)](https://cdrrazan.com)
-[![GitHub](https://img.shields.io/badge/GitHub-cdrrazan-181717?style=for-the-badge&logo=github)](https://github.com/cdrrazan)
-[![X](https://img.shields.io/badge/X-@cdrrazan-000000?style=for-the-badge&logo=x)](https://x.com/cdrrazan)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-cdrrazan-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/cdrrazan)
-[![dev.to](https://img.shields.io/badge/dev.to-cdrrazan-0A0A0A?style=for-the-badge&logo=devdotto)](https://dev.to/cdrrazan)
-
-![Products](https://img.shields.io/badge/Products-11-38bdf8?style=flat-square)
-![Live](https://img.shields.io/badge/Live-5-34d399?style=flat-square)
-![Stack](https://img.shields.io/badge/Made%20with-HTML%20·%20CSS%20·%20Vanilla%20JS-f472b6?style=flat-square)
-![No build](https://img.shields.io/badge/Build%20step-none-fbbf24?style=flat-square)
-
-<p>A single-page, animated showcase of every product shipped by<br>
-<b>Rajan Bhattarai</b> — full-stack Rails developer from Nepal 🇳🇵, GitKraken Ambassador,<br>
-and author of <i>Case Brand when Dev</i>.</p>
+*The complete product catalogue of* **Rajan Bhattarai** *— full-stack Rails engineer,*
+*GitKraken Ambassador, and author of* Case Brand when Dev*.*
 
 </div>
 
----
+<br>
 
-## ✨ Preview
+## Preview
 
 <div align="center">
-<img src="assets/preview-hero.png" alt="Hero section with author profile and product grid" width="90%">
+<img src="assets/preview-hero.png" alt="Editorial hero with studio statement and author details" width="90%">
 <br><br>
-<img src="assets/preview-grid.png" alt="Product grid with live status badges and tech stacks" width="90%">
+<img src="assets/preview-grid.png" alt="Hairline product grid with numbered entries and status markers" width="90%">
 </div>
 
-## 🚀 The product lineup
+<br>
 
-| | Product | What it is | Tech | Status |
+## The catalogue
+
+| № | Product | What it is | Stack | Status |
 |---|---|---|---|---|
-| 💳 | **[Trackaru](https://trackaru.com)** | Subscription tracking — never miss a payment again | Rails | 🟢 Live |
-| 🌐 | **Trovaru** | Domain & SSL operations platform for agencies | Rails | 🟡 In dev |
-| 🔗 | **Linkaru** | URL shortening, analytics & QR codes | TypeScript | 🟡 In dev |
-| 🎨 | **Linkart** | Link-in-bio pages, unlimited & instant | Rails | 🟡 In dev |
-| 🔐 | **Signaru** | Browser-trusted TLS certs via Let's Encrypt | Rails · ACME | 🟡 In dev |
-| 📓 | **Keeparu** | Private writing vault with deliberate public sharing | Rails | 🟡 In dev |
-| 🎛️ | **[Kamandar](https://kamandar.byaru.com)** | Personal GitHub command center across 5 surfaces | Ruby stdlib | 🟢 Live |
-| 🏷️ | **[Denizens](https://devis.im)** | Free `name.devis.im` subdomains & email aliases | Ruby · TS · Actions | 🟢 Live |
-| 🤫 | **Pasten** | Stealth mode — coming soon | — | ⚪ Soon |
-| 🏠 | **[Roost](https://roost.pages.dev)** | Local apps → live HTTPS on your own domain | Go · Docker · Caddy | 🟢 Live |
-| 📋 | **[Boardly](https://boardly-gh.pages.dev)** | GitHub Projects boards on autopilot | TS · Actions | 🟢 Live |
+| 01 | **[Trackaru](https://trackaru.com)** | Subscription tracking — never miss a payment | Rails | Live |
+| 02 | **Trovaru** | Domain & SSL operations for agencies | Rails | In development |
+| 03 | **Linkaru** | URL shortening, analytics & QR codes | TypeScript | In development |
+| 04 | **Linkart** | Link-in-bio pages, unlimited & instant | Rails | In development |
+| 05 | **Signaru** | Browser-trusted TLS certs via Let's Encrypt | Rails · ACME | In development |
+| 06 | **Keeparu** | Private writing vault, public by choice | Rails | In development |
+| 07 | **[Kamandar](https://kamandar.byaru.com)** | Personal GitHub command center | Ruby stdlib | Live |
+| 08 | **[Denizens](https://devis.im)** | Free `name.devis.im` subdomains & aliases | Ruby · TS · Actions | Live |
+| 09 | **Pasten** | Unannounced — in the workshop | — | Coming soon |
+| 10 | **[Roost](https://roost.pages.dev)** | Local apps → live HTTPS on your own domain | Go · Docker · Caddy | Live |
+| 11 | **[Boardly](https://boardly-gh.pages.dev)** | GitHub Projects boards on autopilot | TS · Actions | Live |
 
-## 🛠️ Running locally
+## Running locally
 
-The whole site is one self-contained `index.html` — no build step, no dependencies.
+One self-contained `index.html`. No build step, no dependencies, no framework.
 
 ```sh
-open index.html          # macOS — just open it
+open index.html          # just open it
 python3 -m http.server   # …or serve it → http://localhost:8000
 ```
 
-## 🧬 How it's built
+## Design notes
 
-- **Plain HTML + CSS + vanilla JS** — zero frameworks, zero libraries
-- **Data-driven grid** — products live in one JS array; cards render from it
-- **Animations** — aurora background, staggered scroll-in reveals
-  (`IntersectionObserver`), hover lift & glow, pulsing live badges
-- **Resilient images** — GitHub OpenGraph covers with gradient-monogram fallbacks
-- **Accessible** — semantic markup and full `prefers-reduced-motion` support
+- **Editorial, not flashy** — near-black canvas, hairline Swiss grid, serif
+  display type, a single brass accent
+- **Data-driven** — products live in one JS array; the grid renders from it
+- **Quiet motion** — staggered scroll reveals via `IntersectionObserver`,
+  understated hover states, full `prefers-reduced-motion` support
+- **Zero dependencies** — plain HTML, CSS and vanilla JS
+
+<br>
 
 <div align="center">
 
----
-
-Built with ❤️ by [Rajan Bhattarai](https://cdrrazan.com) · [@cdrrazan](https://x.com/cdrrazan)
+*Built by [Rajan Bhattarai](https://cdrrazan.com) · [@cdrrazan](https://x.com/cdrrazan)*
 
 </div>
