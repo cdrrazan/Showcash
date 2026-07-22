@@ -43,7 +43,7 @@
 | 06 | **Keeparu** | Writing | Private writing vault, public by choice | Rails | In development |
 | 07 | **[Kamandar](https://kamandar.byaru.com)** | Dev Tools | Personal GitHub command center | Ruby stdlib | Live |
 | 08 | **[Denizens](https://devis.im)** | Dev Tools | Free `name.devis.im` subdomains & aliases | Ruby · TS · Actions | Live |
-| 09 | **Pasten** | Unannounced | In the workshop | — | Coming soon |
+| 09 | **Pasten** | Utilities | In the workshop | — | Coming soon |
 | 10 | **[Roost](https://roost.pages.dev)** | Dev Tools | Local apps → live HTTPS on your own domain | Go · Docker · Caddy | Live |
 | 11 | **[Boardly](https://boardly-gh.pages.dev)** | Dev Tools | GitHub Projects boards on autopilot | TS · Actions | Live |
 
