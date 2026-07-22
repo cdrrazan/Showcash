@@ -37,8 +37,12 @@ CLAUDE.md     This file
 - Keep the site a **single self-contained HTML file** — inline all CSS/JS.
   Do not introduce build tools, package.json, or external JS libraries.
   The one permitted external resource is the Google Fonts stylesheet
-  (Fraunces); the serif stack must always fall back to Georgia so the
-  page renders correctly offline.
+  (Fraunces + Google Sans); both stacks must keep system fallbacks
+  (Georgia for serif, system-ui for sans) so the page renders correctly
+  offline.
+- Colors are theme tokens in `:root` (dark default) with light overrides
+  under `:root[data-theme="light"]` and `prefers-color-scheme: light`.
+  Never hard-code a color in a component rule — add a token.
 - External images (GitHub avatars, OpenGraph previews) must always have a
   graceful fallback.
 - Never invent product facts. Unverified products are labeled
