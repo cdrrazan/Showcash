@@ -40,9 +40,8 @@ CLAUDE.md     This file
 - Keep the site a **single self-contained HTML file** — inline all CSS/JS.
   Do not introduce build tools, package.json, or external JS libraries.
   The one permitted external resource is the Google Fonts stylesheet
-  (Fraunces + Google Sans); both stacks must keep system fallbacks
-  (Georgia for serif, system-ui for sans) so the page renders correctly
-  offline.
+  (Google Sans, used for all text including headings); the stack must
+  keep a system-ui fallback so the page renders correctly offline.
 - Colors are theme tokens in `:root` (dark default) with light overrides
   under `:root[data-theme="light"]` and `prefers-color-scheme: light`.
   Never hard-code a color in a component rule — add a token.

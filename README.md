@@ -60,8 +60,8 @@ python3 -m http.server   # …or serve it → http://localhost:8000
 
 ## Design notes
 
-- **Editorial, not flashy** — hairline Swiss grid, Fraunces display serif,
-  Google Sans body text, a single brass accent
+- **Editorial, not flashy** — hairline Swiss grid, Google Sans throughout
+  (headings included), a single brass accent
 - **Dark & light** — follows the system preference, with a manual toggle
   persisted in `localStorage`; near-black canvas in the dark, warm paper
   in the light
