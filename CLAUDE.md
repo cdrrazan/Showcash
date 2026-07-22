@@ -36,6 +36,9 @@ CLAUDE.md     This file
 
 - Keep the site a **single self-contained HTML file** — inline all CSS/JS.
   Do not introduce build tools, package.json, or external JS libraries.
+  The one permitted external resource is the Google Fonts stylesheet
+  (Fraunces); the serif stack must always fall back to Georgia so the
+  page renders correctly offline.
 - External images (GitHub avatars, OpenGraph previews) must always have a
   graceful fallback.
 - Never invent product facts. Unverified products are labeled

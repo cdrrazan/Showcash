@@ -9,6 +9,9 @@
 <meta property="og:description" content="Eleven products. One maker. Subscription tracking, domain operations, developer tooling and more.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%230b0b0c'/><text x='32' y='44' font-family='Georgia,serif' font-size='38' fill='%23c8a978' text-anchor='middle'>S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0b0b0c;
@@ -19,7 +22,7 @@
     --text-dim: #6f6f69;
     --accent: #c8a978;
     --live: #8fae8b;
-    --serif: "New York", ui-serif, Georgia, "Times New Roman", serif;
+    --serif: "Fraunces", "New York", ui-serif, Georgia, "Times New Roman", serif;
     --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -76,6 +79,31 @@
     max-width: 17ch;
   }
   .hero h1 em { font-style: italic; color: var(--accent); }
+
+  /* ---------- Load choreography ---------- */
+  .hero h1 .line { display: block; overflow: hidden; }
+  .hero h1 .line > span {
+    display: block;
+    transform: translateY(112%);
+    animation: rise 1.1s cubic-bezier(.22,1,.36,1) forwards;
+  }
+  .hero h1 .line:nth-child(1) > span { animation-delay: .15s; }
+  .hero h1 .line:nth-child(2) > span { animation-delay: .28s; }
+  @keyframes rise { to { transform: translateY(0); } }
+
+  .kicker { opacity: 0; animation: fade .9s ease .05s forwards; }
+  .kicker::before { transform: scaleX(0); transform-origin: left; animation: draw .9s cubic-bezier(.22,1,.36,1) .2s forwards; }
+  @keyframes draw { to { transform: scaleX(1); } }
+
+  .hero .intro, .hero-links, .statline, .masthead {
+    opacity: 0; animation: fade-up 1s cubic-bezier(.22,1,.36,1) forwards;
+  }
+  .masthead { animation-name: fade; animation-delay: .1s; }
+  .hero .intro { animation-delay: .55s; }
+  .hero-links { animation-delay: .7s; }
+  .statline { animation-delay: .85s; }
+  @keyframes fade { to { opacity: 1; } }
+  @keyframes fade-up { from { transform: translateY(16px); } to { opacity: 1; transform: none; } }
   .hero .intro {
     display: grid;
     grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
@@ -230,6 +258,10 @@
   @media (prefers-reduced-motion: reduce) {
     .card { opacity: 1; transform: none; transition: none; }
     .card .actions a .arrow { transition: none; }
+    .hero h1 .line > span, .kicker, .kicker::before,
+    .hero .intro, .hero-links, .statline, .masthead {
+      animation: none; opacity: 1; transform: none;
+    }
   }
 </style>
 </head>
@@ -245,7 +277,10 @@
 
   <section class="hero">
     <div class="kicker">Independent product studio</div>
-    <h1>Software, built patiently<br>and shipped <em>properly.</em></h1>
+    <h1>
+      <span class="line"><span>Software, built patiently</span></span>
+      <span class="line"><span>and shipped <em>properly.</em></span></span>
+    </h1>
 
     <div class="intro">
       <p class="bio">
