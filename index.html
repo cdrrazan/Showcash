@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Showcash — Rajan Bhattarai</title>
-<meta name="description" content="The product portfolio of Rajan Bhattarai (cdrrazan) — Trackaru, Trovaru, Linkaru, Linkart, Signaru, Keeparu, Kamandar, Denizens, Pasten, Roost and Boardly.">
+<meta name="description" content="The product portfolio of Rajan Bhattarai (cdrrazan) — Trackaru, Trovaru, Linkaru, Linkart, Signaru, Keeparu, Kamandar, Denizens, Pasten, Roost, Boardly and Kromab.">
 <meta property="og:title" content="Showcash — Rajan Bhattarai">
-<meta property="og:description" content="Eleven products. One maker. Subscription tracking, domain operations, developer tooling and more.">
+<meta property="og:description" content="Twelve products. One maker. Subscription tracking, domain operations, developer tooling and more.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='18' fill='%23274C85'/><text x='32' y='44' font-family='sans-serif' font-size='34' font-weight='700' fill='%23D6E3FF' text-anchor='middle'>S</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -452,8 +452,8 @@
   </section>
 
   <div class="statline">
-    <div class="cell"><b>11</b><span>Products</span></div>
-    <div class="cell"><b>05</b><span>Live &amp; serving</span></div>
+    <div class="cell"><b>12</b><span>Products</span></div>
+    <div class="cell"><b>06</b><span>Live &amp; serving</span></div>
     <div class="cell"><b>08+</b><span>Years of craft</span></div>
   </div>
 
@@ -588,6 +588,16 @@ const products = [
     github: "https://github.com/cdrrazan/boardly",
     stack: ["TypeScript", "Octokit GraphQL", "GitHub Actions"],
     status: "live"
+  },
+  {
+    name: "Kromab",
+    cat: "Utilities",
+    tagline: "Your Chrome bookmarks, liberated",
+    desc: "A tiny self-hosted bookmark manager on Cloudflare Pages — import your Chrome bookmarks once, reach them from any device behind your own password wall, and export back out anytime. Zero dependencies, no build step.",
+    url: null,
+    github: "https://github.com/cdrrazan/kromab",
+    stack: ["Cloudflare Pages", "D1 (SQLite)", "JavaScript"],
+    status: "live"
   }
 ];
 
@@ -611,7 +621,7 @@ document.getElementById("grid").innerHTML = products.map((p, i) => {
     <div class="actions">${links}</div>
   </article>`;
 }).join("") + `<article class="card colophon">
-    <p>Eleven products and counting. The next one is already on the bench.</p>
+    <p>Twelve products and counting. The next one is already on the bench.</p>
     <a class="btn small" href="https://x.com/cdrrazan" target="_blank" rel="noopener">Follow along</a>
   </article>`;
 

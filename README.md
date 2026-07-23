@@ -46,6 +46,7 @@
 | 09 | **Pasten** | Utilities | In the workshop | — | Coming soon |
 | 10 | **[Roost](https://roost.pages.dev)** | Dev Tools | Local apps → live HTTPS on your own domain | Go · Docker · Caddy | Live |
 | 11 | **[Boardly](https://boardly-gh.pages.dev)** | Dev Tools | GitHub Projects boards on autopilot | TS · Actions | Live |
+| 12 | **[Kromab](https://github.com/cdrrazan/kromab)** | Utilities | Self-hosted Chrome bookmark manager | Cloudflare Pages · D1 | Live |
 
 The catalogue is filterable by category on the page itself.
 
