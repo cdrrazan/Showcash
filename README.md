@@ -60,11 +60,11 @@ python3 -m http.server   # …or serve it → http://localhost:8000
 
 ## Design notes
 
-- **Material 3** — warm gold tonal palette, rounded surface cards in a
+- **Material 3** — navy blue tonal palette, rounded surface cards in a
   gapped grid, filter chips, pill buttons with state layers, elevation
   on hover, Google Sans throughout
 - **Dark & light** — follows the system preference, with a manual toggle
-  persisted in `localStorage`; warm dark surfaces or warm paper light
+  persisted in `localStorage`; deep navy surfaces or cool blue-white light
 - **Data-driven** — products live in one JS array; the grid renders from it
 - **Quiet motion** — staggered scroll reveals via `IntersectionObserver`,
   understated hover states, full `prefers-reduced-motion` support

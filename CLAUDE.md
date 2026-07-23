@@ -45,7 +45,7 @@ CLAUDE.md     This file
 - Colors are Material 3-style tokens in `:root` (dark default) with light
   overrides under `:root[data-theme="light"]` and
   `prefers-color-scheme: light` — surface/on-surface/primary/container
-  pairs seeded from a warm gold. Never hard-code a color in a component
+  pairs seeded from navy blue. Never hard-code a color in a component
   rule — add a token. Buttons use the `.btn` classes (filled, tonal,
   outlined, text) with an `::after` state layer.
 - External images (GitHub avatars, OpenGraph previews) must always have a
