@@ -42,6 +42,18 @@
     --live: #9ed49d;
     --live-container: #1f4f26;
     --on-live-container: #baefb8;
+    --amber-container: #564a11;
+    --on-amber-container: #f8e287;
+    --blue-container: #26436b;
+    --on-blue-container: #d5e3ff;
+    --teal-container: #1f4e49;
+    --on-teal-container: #b9ece4;
+    --violet-container: #463e6e;
+    --on-violet-container: #e3dcff;
+    --pink-container: #5c3247;
+    --on-pink-container: #ffd9e6;
+    --orange-container: #5c3d1e;
+    --on-orange-container: #ffdcbd;
     --shadow: 0 1px 2px rgba(0,0,0,.5), 0 2px 6px 2px rgba(0,0,0,.25);
     --shadow-lift: 0 4px 8px 3px rgba(0,0,0,.3), 0 1px 3px rgba(0,0,0,.5);
     --sans: "Google Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -66,6 +78,18 @@
       --live: #38693c;
       --live-container: #d3efd0;
       --on-live-container: #0f2e12;
+      --amber-container: #f5e388;
+      --on-amber-container: #221b00;
+      --blue-container: #d7e3ff;
+      --on-blue-container: #001b3d;
+      --teal-container: #c5ece6;
+      --on-teal-container: #05201d;
+      --violet-container: #e5deff;
+      --on-violet-container: #1b1146;
+      --pink-container: #ffd9e6;
+      --on-pink-container: #32101e;
+      --orange-container: #ffdcbf;
+      --on-orange-container: #331200;
       --shadow: 0 1px 2px rgba(20,35,70,.18), 0 2px 6px 2px rgba(20,35,70,.08);
       --shadow-lift: 0 4px 8px 3px rgba(20,35,70,.12), 0 1px 3px rgba(20,35,70,.18);
     }
@@ -89,6 +113,18 @@
     --live: #38693c;
     --live-container: #d3efd0;
     --on-live-container: #0f2e12;
+    --amber-container: #f5e388;
+    --on-amber-container: #221b00;
+    --blue-container: #d7e3ff;
+    --on-blue-container: #001b3d;
+    --teal-container: #c5ece6;
+    --on-teal-container: #05201d;
+    --violet-container: #e5deff;
+    --on-violet-container: #1b1146;
+    --pink-container: #ffd9e6;
+    --on-pink-container: #32101e;
+    --orange-container: #ffdcbf;
+    --on-orange-container: #331200;
     --shadow: 0 1px 2px rgba(20,35,70,.18), 0 2px 6px 2px rgba(20,35,70,.08);
     --shadow-lift: 0 4px 8px 3px rgba(20,35,70,.12), 0 1px 3px rgba(20,35,70,.18);
   }
@@ -312,13 +348,18 @@
     padding: 3px 11px;
     font-size: 11.5px; font-weight: 600;
   }
+  .cat[data-cat="SaaS"]       { background: var(--blue-container);   color: var(--on-blue-container); }
+  .cat[data-cat="Link Tools"] { background: var(--teal-container);   color: var(--on-teal-container); }
+  .cat[data-cat="Dev Tools"]  { background: var(--violet-container); color: var(--on-violet-container); }
+  .cat[data-cat="Writing"]    { background: var(--pink-container);   color: var(--on-pink-container); }
+  .cat[data-cat="Utilities"]  { background: var(--orange-container); color: var(--on-orange-container); }
   .status {
     font-size: 11.5px; font-weight: 700; letter-spacing: .03em;
     border-radius: 999px; padding: 4px 12px;
   }
   .status.live { background: var(--live-container); color: var(--on-live-container); }
-  .status.dev  { background: var(--surface-highest); color: var(--on-surface-var); }
-  .status.soon { background: transparent; color: var(--on-surface-var); border: 1px dashed var(--outline); }
+  .status.dev  { background: var(--amber-container); color: var(--on-amber-container); }
+  .status.soon { background: var(--secondary-container); color: var(--on-secondary-container); border: 1px dashed var(--outline); }
 
   .card h3 { font-size: 1.45rem; font-weight: 600; letter-spacing: -.01em; }
   .card .tagline { color: var(--primary); font-size: .9rem; font-weight: 600; margin-top: 4px; }
@@ -560,7 +601,7 @@ document.getElementById("grid").innerHTML = products.map((p, i) => {
   ].join("");
   return `<article class="card" data-cat="${p.cat}">
     <div class="top">
-      <span class="num">${String(i + 1).padStart(2, "0")}<span class="cat">${p.cat}</span></span>
+      <span class="num">${String(i + 1).padStart(2, "0")}<span class="cat" data-cat="${p.cat}">${p.cat}</span></span>
       <span class="status ${p.status}">${STATUS[p.status]}</span>
     </div>
     <h3>${p.name}</h3>
