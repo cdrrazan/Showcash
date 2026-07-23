@@ -42,9 +42,12 @@ CLAUDE.md     This file
   The one permitted external resource is the Google Fonts stylesheet
   (Google Sans, used for all text including headings); the stack must
   keep a system-ui fallback so the page renders correctly offline.
-- Colors are theme tokens in `:root` (dark default) with light overrides
-  under `:root[data-theme="light"]` and `prefers-color-scheme: light`.
-  Never hard-code a color in a component rule — add a token.
+- Colors are Material 3-style tokens in `:root` (dark default) with light
+  overrides under `:root[data-theme="light"]` and
+  `prefers-color-scheme: light` — surface/on-surface/primary/container
+  pairs seeded from a warm gold. Never hard-code a color in a component
+  rule — add a token. Buttons use the `.btn` classes (filled, tonal,
+  outlined, text) with an `::after` state layer.
 - External images (GitHub avatars, OpenGraph previews) must always have a
   graceful fallback.
 - Never invent product facts. Unverified products are labeled
